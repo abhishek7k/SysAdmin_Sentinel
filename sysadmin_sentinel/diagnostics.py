@@ -2,7 +2,6 @@ import psutil
 import platform
 import functools
 
-
 @functools.lru_cache(maxsize=1)
 def get_system_info():
     """Fetches combined system information (Cached for ultra-fast repeated access)."""

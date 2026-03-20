@@ -12,14 +12,21 @@ By automating repetitive troubleshooting sequences, fetching critical diagnostic
    * Automatically fetches OS, RAM, CPU, and Disk partitions.
    * Employs real-time logic to flag critical thresholds (e.g., > 90% CPU, < 10GB free disk space) with colored warnings.
 
+   ![System Diagnostic](../Screenshots/1.%20system%20diagnostic.png)
+
 2. **🌐 Network Troubleshooting**
+   ![Network Troubleshooting](../Screenshots/2.%20network%20troubleshooting.png)
    * **Ping Sweeps**: Pings target domains with robust packet-loss analysis.
    * **Port Checking**: Verifies if specific TCP ports are open.
    * **Auto-Resolution**: Automatically transforms domains into IPv4 addresses prior to port scanning.
    * **Local Network**: Instantly reads your active local IP.
+   
+   ![Get IP](../Screenshots/2.%20get%20IP.png)
 
 3. **🛠️ Automated Windows Remediation**
+   ![Remediation Tasks](../Screenshots/3.%20Remediation%20tasks.png)
    * **Clear User `%TEMP%`**: Employs an ultra-fast `os.scandir` algorithm to wipe hidden temporary files safely.
+     ![Clear Temp Files](../Screenshots/3.%20clear%20temp%20files.png)
    * **Flush DNS**: Resets the local DNS resolver cache to fix routing errors. 
    * **Service Restarts**: Reboots the `Print Spooler` (requires Administrator context).
    
@@ -27,10 +34,15 @@ By automating repetitive troubleshooting sequences, fetching critical diagnostic
    * Parses active/disabled local Windows users using internal PowerShell hooks.
    * Includes a customizable, cryptographically secure password generator for resetting user passwords securely.
 
+   ![User Management](../Screenshots/4.%20user%20management.png)
+
 5. **🎫 Secure Ticketing Logs**
+   ![Ticketing Logs](../Screenshots/5.%20ticketing%20logs.png)
    * Built on an internal SQLite database using Write-Ahead Logging (WAL) for concurrency.
    * Logs every single action a technician takes directly into `tickets.db`.
    * **Export Engine**: Allows the technician to press a button and instantly export their action logs into an audit-ready `.csv` file.
+
+   ![Ticket Exported CSV](../Screenshots/5.%20ticket%20exported%20csv%20file.png)
 
 ---
 
